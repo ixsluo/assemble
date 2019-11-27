@@ -2,7 +2,7 @@ gcc = gfortran
 
 target = double.x
 # module file should be placed front.
-obj = parameters.o math.o main.o read_file.o
+obj = parameters.o math.o main.o io.o
 
 ${target} : ${obj}
 	${gcc} -o ${target} ${obj}

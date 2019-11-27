@@ -14,6 +14,7 @@ type pos_type
 endtype pos_type
 
 type input_type
+  integer                                         :: axis          ! along x or y or z
   integer                                         :: nspecies
   integer                                         :: ndelta
   real(dbl), dimension(:), allocatable            :: delta

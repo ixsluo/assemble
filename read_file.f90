@@ -24,12 +24,14 @@ open (unit=21, file='input.dat', action='read')
     if ( len(back) == 0 ) cycle
 
     select case(front)
+    case('axis')
+      read (back,*) input%axis
     case('nspecies')
       read (back,*) input%nspecies
     case('ndelta')
       read (back,*) input%ndelta
-      if ( allocated(input%delta) ) deallocate(input%delta)
-      allocate ( input%delta(input%ndelta) )
+        if ( allocated(input%delta) ) deallocate(input%delta)
+        allocate ( input%delta(input%ndelta) )
     case('delta')
       read (back,*) input%delta(:)
     case default

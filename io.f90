@@ -57,10 +57,8 @@ integer                              :: io
 write (*,*) 'Reading ', posfile
 
 open (unit=11, file=posfile, action='read', iostat=io)
-  if (io>0) then
-    write (*,*) 'Wrong POSCAR'
-  elseif (io<0) then
-    write (*,*) 'End of file'
+  if (io/=0) then
+    write (*,*) 'ERROR in reading POSCAR.'
   else
     read (11,*) pos%sysname
     read (11,*) pos%ratio

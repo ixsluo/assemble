@@ -3,7 +3,7 @@ program double
 ! Choose which axis by 1 for x, 2 for y, 3 for z.
 ! ----------     -----------
 ! |POSCAR_1|     |         |
-! |vaccum  |  => |SPOSCAR_*|
+! |vacuum  |  => |SPOSCAR_*|
 ! |POSCAR_2|     |         |
 ! ----------     -----------
 !

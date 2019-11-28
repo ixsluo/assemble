@@ -1,10 +1,10 @@
 double.x
 
-This program assamble two orthogonal cell together with a vaccum.
+This program assamble two orthogonal cell together with a vacuum.
 These two cell should have the same number of species.
 ----------     -----------
 |POSCAR_1|     |         |
-|vaccum  |  => |SPOSCAR_*|
+|vacuum  |  => |SPOSCAR_*|
 |POSCAR_2|     |         |
 ----------     -----------
 
@@ -13,8 +13,8 @@ output file :     SPOSCAR_*
 
 Along which axis should be specifed in 'axis'. 1, 2, 3 for x, y, z.
 Number of species should be specifed in 'nspecies'.
-Number of vaccum thickness should be specifed in 'ndelta'.
-Vaccum thickness should be specifed in 'delta'.
+Number of vacuum thickness should be specifed in 'ndelta'.
+Vacuum thickness should be specifed in 'delta'.
 
 !!! All key words should be in lower case
 

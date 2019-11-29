@@ -38,7 +38,6 @@ call read_pos(filename, pos_2, input%nspecies)
 ! init pos_save
 pos_save%sysname                    =   pos_1%sysname
 pos_save%ratio                      =   pos_1%ratio
-pos_save%lat                        =   pos_1%lat
 pos_save%species                    =   trim(adjustl(pos_1%species))//'  '//&
                                        &trim(adjustl(pos_2%species))
 allocate ( pos_save%noa(2*input%nspecies) )
@@ -52,6 +51,7 @@ write (*,*) pos_save%noa
 
 ! loop on delta
 delta : do kk=1,input%ndelta
+  pos_save%lat                        =   pos_1%lat
   write (*,*) 'delta: ', input%delta(kk)
   
   ! (1) fractional to cartesian, save in pos_save%pos_f

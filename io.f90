@@ -108,7 +108,7 @@ integer                        :: ii
 
 write (posfile,*) delta
 posfile = trim(adjustl(posfile))
-posfile = 'SPOSCAR_'//posfile(:5)
+posfile = 'SPOSCAR_'//posfile(:5)//'.vasp'
 
 open (unit=20, file=posfile, action='write')
   write (20,*) pos%sysname

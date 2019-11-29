@@ -1,6 +1,6 @@
 double.x
 
-This program assamble two orthogonal cell together with a vacuum.
+This program assemble two orthogonal cell together with a vacuum.
 These two cell should have the same number of species.
 ----------     -----------
 |POSCAR_1|     |         |
